@@ -24,7 +24,7 @@
         #side {
             width: 250px;
             height: 800px;
-            background: rgb(86, 86, 233);
+            background: rgb(17, 136, 184);
             float: left;
             color: white;
             text-align: center;
@@ -41,9 +41,9 @@
             
         }
 
-        #namecard img:hover{
+        /* #namecard img:hover{
             background-image:url(../media/푸바오.jpg);
-        }
+        } */
     
 
         #namecard h1 {
@@ -143,10 +143,10 @@
         <div id="side">
             <div id="time" class="time"></div>
             <div id="namecard">
-                <img src="../media/짱구.jpg" alt="프로필 이미지">
+                <img src="media/짱구.jpg" alt="프로필 이미지">
                 
                 <h1>SungGipil</h1>
-                <p>프로그래밍 재밌어요!</p>
+                <p>코딩의 노예</p>
             </div>
 
             <div id="detail">
@@ -177,16 +177,19 @@
                 <h2 class="subtitle">Experience</h2>
 
                 <ul>
-                    <li> 아주좋은 대학교
+                    <li> 그저그런 대학교
                         <ul>
-                            <li>응용프로그램 개발(C#)</li>
-                            <li>모바일 app 개발(안드로이드)</li>
-                            <li>반응형 웹</li>
+                            <li>파이썬</li>
+                            <li>vc</li>
+                            <li>jsp</li>
                         </ul>
                     </li>
 
                     <li>꽤 괜찮은 컴퓨터학원
                         <ul>
+                            <li>html</li>
+                            <li>자바</li>
+                            <li>오라클</li>
                             <li>Spring 기반 프로젝트 - 쇼핑몰</li>
                             <li>Cloud 서비스를 이용한 배포</li>
                         </ul>
@@ -244,8 +247,10 @@
          let datetime = new Date();
         let obj = document.querySelector("#time");
         let second = datetime.getSeconds() < 10 ? "0" + datetime.getSeconds() : datetime.getSeconds();
+        let Minutes = datetime.getMinutes() < 10 ? "0" + datetime.getMinutes() : datetime.getMinutes();
+
         let time = datetime.getHours() + " : "
-                    + datetime.getMinutes() + " : "
+                    +Minutes + " : "
                     + second;
 
         obj.innerHTML = time;
