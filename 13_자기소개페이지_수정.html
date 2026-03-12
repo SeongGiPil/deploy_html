@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <title>온라인 프로필</title>
+    <meta charset="utf-8">
+
+    <style>
+        body {
+            background: #f2f4f8;
+        }
+
+        /* 전체 */
+        #container {
+            width: 800px;
+            margin: 30px auto;
+            background: white;
+            box-shadow: 2px 2px 5px #746f6f;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        /* 사이드 */
+        #side {
+            width: 250px;
+            height: 800px;
+            background: rgb(17, 136, 184);
+            float: left;
+            color: white;
+            text-align: center;
+            padding-top: 30px;
+            box-sizing: border-box;
+        }
+
+        /* 프로필 사진 */
+        #namecard img {
+            width: 120px;
+            border-radius: 50%;
+            border: 4px solid white;
+            margin-bottom: 10px;
+            
+        }
+
+        
+
+        #namecard h1 {
+            margin: 10px 0;
+        }
+
+        #namecard p {
+            font-size: 14px;
+        }
+
+        #detail {
+            margin-top: 40px;
+            font-size: 14px;
+        }
+
+        #sns {
+            margin-top: 40px;
+        }
+
+        #sns a {
+            display: inline-block;
+            background: white;
+            color: rgb(86, 86, 233);
+            padding: 8px 18px;
+            border-radius: 20px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        #sns a:hover {
+            background: #eee;
+        }
+
+        /* 내용 */
+        #contents {
+            width: 550px;
+            height: 800px;
+            background: white;
+            float: left;
+            padding: 30px;
+            box-sizing: border-box;
+        }
+
+        /* 제목 */
+        .subtitle {
+            border-left: 5px solid rgb(86, 86, 233);
+            padding-left: 10px;
+            margin-bottom: 10px;
+        }
+          /* section 간격 */
+        section {
+            margin-bottom: 25px;
+        }
+
+        /* 리스트 */
+        ul {
+            line-height: 1.8;
+        }
+
+        /* 테이블 */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        table, tr, th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        thead {
+            background: rgb(86, 86, 233);
+            color: white;
+        }
+        
+        .mark {
+            background: #ffe066;
+            padding: 2px 4px;
+            border-radius: 6px;
+        }
+         .time{
+        font-weight: bold;
+        color:red;
+       margin-top:10px;
+    }
+    </style>
+</head>
+
+<body>
+
+    <div id="container">
+        <!-- 사이드바 -->
+         
+        <div id="side">
+            <div id="time" class="time"></div>
+            <div id="namecard">
+                <img src="media/짱구.jpg" alt="프로필 이미지">
+                
+                <h1>SungGipil</h1>
+                <p>코딩의 노예</p>
+            </div>
+
+            <div id="detail">
+                <p>⛪ 주소: Incheon, Korea</p>
+                <p>📧 이메일: abcd1234@naver.com</p>
+                <p> 전화번호: 010-1234-5678</p>
+            </div>
+
+            <div id="sns">
+                <h2>SNS</h2>
+                <h3><a href="http://google.com">클릭!</a></h3>
+            </div>
+
+        </div>
+
+
+        <!-- 내용 -->
+        <div id="contents">
+
+            <section>
+                <h2 class="subtitle">자기소개</h2>
+                <div> <span class="mark">프로그래밍</span>에 관심만 많습니다</div>
+                <div>하기싫지만 먹고살기 위해 하는중</div>
+            </section>
+
+
+            <section>
+                <h2 class="subtitle">Experience</h2>
+
+                <ul>
+                    <li> 그저그런 대학교
+                        <ul>
+                            <li>파이썬</li>
+                            <li>vc</li>
+                            <li>jsp</li>
+                        </ul>
+                    </li>
+
+                    <li>꽤 괜찮은 컴퓨터학원
+                        <ul>
+                            <li>html</li>
+                            <li>자바</li>
+                            <li>오라클</li>
+                            <li>Spring 기반 프로젝트 - 쇼핑몰</li>
+                            <li>Cloud 서비스를 이용한 배포</li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+
+
+            <section>
+                <h2 class="subtitle">보유 기술</h2>
+                <ul>
+                    <li>Java</li>
+                    <li>Oracle</li>
+                    <li>HTML / CSS</li>
+                </ul>
+            </section>
+
+
+            <section>
+                <h2 class="subtitle">Education</h2>
+                <table>
+                    <caption>학력 사항</caption>
+                    <thead>
+                        <tr>
+                            <th>출신학교</th>
+                            <th>전공</th>
+                            <th>기간</th>
+                            <th>구분</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>아주좋은 대학교</td>
+                            <td>좋은학과</td>
+                            <td>2010.3 ~ 2013.2</td>
+                            <td>졸업</td>
+                        </tr>
+
+                        <tr>
+                            <td>꽤좋은고등학교</td>
+                            <td>-</td>
+                            <td>2007.3 ~ 2009.2</td>
+                            <td>졸업</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+          setInterval(()=>{
+         let datetime = new Date();
+        let obj = document.querySelector("#time");
+        let second = datetime.getSeconds() < 10 ? "0" + datetime.getSeconds() : datetime.getSeconds();
+        let Minutes = datetime.getMinutes() < 10 ? "0" + datetime.getMinutes() : datetime.getMinutes();
+
+        let time = datetime.getHours() + " : "
+                    +Minutes + " : "
+                    + second;
+
+        obj.innerHTML = time;
+},1000);
+</script>
