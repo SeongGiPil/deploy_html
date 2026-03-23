@@ -1,0 +1,176 @@
+       alert{
+        text-align: center;
+        font-weight: bold;
+        color:magenta
+       }  
+       
+       body {
+            background:beige;
+        }
+        /* 전체 */
+        #container {
+            width: 800px;
+            margin: 30px auto;
+            background: white;
+            box-shadow: 2px 2px 5px #746f6f;
+            border-radius: 10px;
+            overflow: hidden;
+            display:flex;
+        }
+
+        /* 사이드 */
+        #side {
+            width: 250px;
+             background: rgb(125, 127, 187);
+            float: left;
+            color: white;
+            text-align: center;
+            padding-top: 30px;
+            box-sizing: border-box;
+        }
+
+        #side p{
+            font-weight: bold;
+            font-size:15px;
+           
+        }
+
+        /* 프로필 사진 */
+        #namecard img {
+            width: 120px;
+            border-radius: 50%;
+            border: 4px solid white;
+            margin-bottom: 10px;   
+    
+        }
+
+        
+
+
+
+        #namecard img:hover{
+        content:url("../project/짱구.jpg");
+
+        }
+       
+
+      
+       
+        #detail {
+            margin-top: 40px;
+            font-size: 14px;
+        }
+
+        #sns {
+            margin-top: 40px;
+        }
+
+        #sns a {
+            display: inline-block;
+            background: white;
+            color: rgb(219, 137, 23);
+            padding: 8px 18px;
+            border-radius: 20px;
+            text-decoration: none;
+            font-weight: bold;
+            background-color:#eee;
+        }
+
+        #sns a:hover {
+            background:red;
+        }
+
+        /* 내용 */
+        #contents {
+            width: 550px;
+            border-radius: 10px;
+            background: white;
+            float: left;
+            padding: 30px;
+            box-sizing: border-box;
+            /* flex:1; */
+        }
+
+        /* 제목 */
+        .subtitle {
+            border-left: 5px solid rgb(31, 206, 229);
+            padding-left: 10px;
+            margin-bottom: 10px;
+        }
+          /* section 간격 */
+        section {
+            margin-bottom: 25px;
+        }
+
+        .card{
+             background-color:rgb(34, 134, 201);
+            padding:20px;
+            border-radius: 10px;
+            margin-bottom:20px;
+        
+               
+        
+        }
+        .card2{
+             background-color:rgb(162, 207, 14);
+            padding:20px;
+            margin-bottom:20px;
+            border-radius: 30px;
+             
+        
+        }
+        .card3{
+             background-color:rgb(16, 210, 155);
+            padding:20px;
+            margin-bottom:20px;
+            border-radius: 50px;
+            
+        
+        }
+
+        /* 리스트 */
+        ul {
+            line-height: 1.8;
+        }
+
+        /* 테이블 */
+        table {
+            width: 80%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+       
+
+        table, tr, th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+            font-size: 14px;
+            display:flex;
+            
+            
+        }
+
+        thead {
+            background: rgb(8, 114, 220);
+            color: white;
+        }
+        
+        .mark {
+            background:blue;
+            padding: 2px 4px;
+            border-radius: 6px;
+           
+        }
+
+        .mark:hover{
+            background-color: red;
+             font-weight:bold;
+        }
+         .time{
+        font-weight: bold;
+        color:red;
+       margin-top:10px;
+    }
+
